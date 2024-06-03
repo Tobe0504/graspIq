@@ -7,7 +7,6 @@ const fetchCountries = async () => {
   await axios
     .get(fetchUrl)
     .then((res) => {
-      console.log(res);
       const countriesObject = Object.values(res?.data?.data);
       const countries = countriesObject.map((data) => {
         return `<option>${data?.country}</option>`;
@@ -54,11 +53,9 @@ const questionContainers = faqs.map((data, i) => {
     </div>`;
 });
 
-console.log(questionContainers, "Hmm");
 questionSection.innerHTML = questionContainers;
 
 const dropdownClickHandler = (index) => {
-  console.log("This is a boy");
   const content = document.getElementById(`content-${index}`);
 
   if (content.style.maxHeight === "0px" || content.style.maxHeight === "0") {
@@ -66,8 +63,6 @@ const dropdownClickHandler = (index) => {
   } else {
     content.style.maxHeight = "0px";
   }
-
-  console.log(content);
 };
 
 faqs.forEach((_, index) => {
