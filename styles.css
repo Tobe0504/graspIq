@@ -70,6 +70,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   height: 80px;
+  gap: 2rem;
   padding: 20px 100px;
   position: sticky;
   top: 0;
@@ -77,17 +78,57 @@ nav {
   background: #f9fbfc;
 }
 
-nav > p {
+nav > a,
+.sidenavInner > div > a {
   font-family: Manrope;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 33px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 150%;
   text-align: left;
-  color: #1c1c1c;
+  color: #000;
+  text-decoration: none;
+  margin-left: auto;
+  display: block;
 }
 
-nav > p > span {
-  color: #0046b7;
+nav > img,
+.sidenavInner > img,
+footer > .upperSection > div > img {
+  width: 215px;
+}
+
+nav > svg {
+  display: none;
+}
+
+.sidenav {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 20;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 0%;
+  background: #fff;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+.sidenavInner {
+  padding: 20px;
+}
+
+.sidenavInner > svg {
+  float: right;
+}
+
+.sidenavInner > div {
+  margin-top: 2rem;
+}
+
+.sidenavInner > div > a {
+  margin-bottom: 2rem;
 }
 
 .heroSection {
@@ -558,14 +599,18 @@ footer > .lowerSection {
     z-index: 20;
   }
 
-  nav > p {
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 150%;
+  nav > img,
+  footer > .upperSection > div > img {
+    width: 185px;
   }
 
-  nav > button {
+  nav > button,
+  nav > a {
     display: none;
+  }
+
+  nav > svg {
+    display: block;
   }
 
   .heroSection {
@@ -784,7 +829,12 @@ footer > .lowerSection {
     line-height: 150%;
   }
 
-  nav > button {
+  nav > svg {
+    display: block;
+  }
+
+  nav > button,
+  nav > a {
     display: none;
   }
 

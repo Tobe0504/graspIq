@@ -71,6 +71,53 @@ faqs.forEach((_, index) => {
     .addEventListener("click", () => dropdownClickHandler(index));
 });
 
-document
-  .getElementById("contentHeader")
-  .addEventListener("click", dropdownClickHandler);
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("waitListForm");
+  const navButton = document.querySelector("#navButton");
+  const heroSectionButton = document.querySelector(".heroSection button");
+
+  if (form && navButton) {
+    const scrollToForm = () => {
+      form.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline: "start",
+      });
+    };
+
+    navButton.addEventListener("click", scrollToForm);
+    heroSectionButton.addEventListener("click", scrollToForm);
+  } else {
+    console.error("Form or navigation button not found.");
+  }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const sideNavCloseButton = document.querySelector(".sidenavInner > svg");
+  const sideNav = document.querySelector(".sidenav");
+  const hamburgerMenu = document.querySelector("nav svg");
+
+  console.log(sideNav, sideNavCloseButton, hamburgerMenu);
+
+  if (sideNav && sideNavCloseButton) {
+    const closeSideNav = () => {
+      sideNav.style.width = "0%";
+    };
+
+    sideNavCloseButton.addEventListener("click", closeSideNav);
+  }
+
+  if (hamburgerMenu && sideNav) {
+    const openSideNav = () => {
+      sideNav.style.width = "100%";
+    };
+
+    hamburgerMenu.addEventListener("click", openSideNav);
+  }
+});
+
+const contentHeader = document.getElementById("contentHeader");
+
+if (contentHeader) {
+  contentHeader.addEventListener("click", dropdownClickHandler);
+}
