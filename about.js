@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const closeSideNav = () => {
       sideNav.style.width = "0%";
     };
-
     sideNavCloseButton.addEventListener("click", closeSideNav);
   }
 
