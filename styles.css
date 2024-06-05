@@ -177,6 +177,7 @@ nav > svg {
   flex-basis: 50%;
   position: relative;
   height: 100%;
+  border-radius: 20px;
 }
 
 .heroSection > .imageSection > img {
