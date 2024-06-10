@@ -21,7 +21,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (navButton) {
     navButton.addEventListener("click", () => {
-      window.location.href = "./index.html";
+      window.location.href = "./waiting-list.html";
+    });
+  }
+
+  const headerRoutes = document.querySelectorAll("nav a");
+
+  headerRoutes.forEach((route) => {
+    if (route.href === location.href) {
+      route.style.color = "#0046b7";
+    }
+  });
+
+  const logoImage = document.querySelector("nav > img");
+
+  if (logoImage) {
+    logoImage.addEventListener("click", () => {
+      document.location.href = "/index.html";
     });
   }
 });

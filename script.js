@@ -1,48 +1,28 @@
-const dropdownContent = document.getElementById("dropdownContent");
-const questionSection = document.getElementById("questionSection");
+document.addEventListener("DOMContentLoaded", () => {
+  const questionSection = document.getElementById("questionSection");
 
-const fetchCountries = async () => {
-  const fetchUrl = "https://api.first.org/data/v1/countries";
+  const faqs = [
+    {
+      question: "What is GraspIQ?",
+      answer:
+        "GraspIQ is an AI-driven platform designed to personalize early education using adaptive learning and biometric feedback.",
+    },
 
-  await axios
-    .get(fetchUrl)
-    .then((res) => {
-      const countriesObject = Object.values(res?.data?.data);
-      const countries = countriesObject.map((data) => {
-        return `<option>${data?.country}</option>`;
-      });
+    {
+      question: "Who can benefit from GraspIQ?",
+      answer:
+        "Teachers, parents, Edtech companies, and educational researchers can all benefit from our innovative tools",
+    },
 
-      dropdownContent.innerHTML = countries;
-    })
-    .catch((err) => {
-      console.log(err);
-    });
-};
+    {
+      question: "How can I get involved?",
+      answer:
+        "Join our waiting list to get updates and be among the first to access GraspIQ.",
+    },
+  ];
 
-fetchCountries();
-
-const faqs = [
-  {
-    question: "What is GraspIQ?",
-    answer:
-      "GraspIQ is an AI-driven platform designed to personalize early education using adaptive learning and biometric feedback.",
-  },
-
-  {
-    question: "Who can benefit from GraspIQ?",
-    answer:
-      "Teachers, parents, Edtech companies, and educational researchers can all benefit from our innovative tools",
-  },
-
-  {
-    question: "How can I get involved?",
-    answer:
-      "Join our waiting list to get updates and be among the first to access GraspIQ.",
-  },
-];
-
-const questionContainers = faqs.map((data, i) => {
-  return `<div>
+  const questionContainers = faqs.map((data, i) => {
+    return `<div>
     <div id="contentHeader-${i}">
     <span>${data.question}</span>
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 27 14" fill="none">
@@ -51,53 +31,43 @@ const questionContainers = faqs.map((data, i) => {
     </div>
     <div id="content-${i}">${data.answer}</div>
     </div>`;
-});
+  });
 
-questionSection.innerHTML = questionContainers;
+  questionSection.innerHTML = questionContainers.join("");
 
-const dropdownClickHandler = (index) => {
-  const content = document.getElementById(`content-${index}`);
+  const dropdownClickHandler = (index) => {
+    const content = document.getElementById(`content-${index}`);
 
-  if (content.style.maxHeight === "0px" || content.style.maxHeight === "0") {
-    content.style.maxHeight = "200" + "px";
-  } else {
-    content.style.maxHeight = "0px";
-  }
-};
+    if (content.style.maxHeight === "0px" || content.style.maxHeight === "0") {
+      content.style.maxHeight = "200" + "px";
+    } else {
+      content.style.maxHeight = "0px";
+    }
+  };
 
-faqs.forEach((_, index) => {
-  document
-    .getElementById(`contentHeader-${index}`)
-    .addEventListener("click", () => dropdownClickHandler(index));
-});
+  faqs.forEach((_, index) => {
+    document
+      .getElementById(`contentHeader-${index}`)
+      .addEventListener("click", () => dropdownClickHandler(index));
+  });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("waitListForm");
   const navButton = document.querySelector("#navButton");
   const heroSectionButton = document.querySelector(".heroSection button");
+  const waitListPreSectionButton = document.querySelector(
+    ".waitListPreSection > button"
+  );
 
-  if (form && navButton) {
-    const scrollToForm = () => {
-      form.scrollIntoView({
-        behavior: "smooth",
-        block: "center",
-        inline: "start",
-      });
-    };
+  const scrollToForm = () => {
+    window.location.href = "/waiting-list.html";
+  };
 
-    navButton.addEventListener("click", scrollToForm);
-    heroSectionButton.addEventListener("click", scrollToForm);
-  } else {
-    console.error("Form or navigation button not found.");
-  }
-});
+  navButton.addEventListener("click", scrollToForm);
+  waitListPreSectionButton.addEventListener("click", scrollToForm);
+  heroSectionButton.addEventListener("click", scrollToForm);
 
-document.addEventListener("DOMContentLoaded", () => {
   const sideNavCloseButton = document.querySelector(".sidenavInner > svg");
   const sideNav = document.querySelector(".sidenav");
   const hamburgerMenu = document.querySelector("nav svg");
-
-  console.log(sideNav, sideNavCloseButton, hamburgerMenu);
 
   if (sideNav && sideNavCloseButton) {
     const closeSideNav = () => {
@@ -107,6 +77,14 @@ document.addEventListener("DOMContentLoaded", () => {
     sideNavCloseButton.addEventListener("click", closeSideNav);
   }
 
+  const headerRoutes = document.querySelectorAll("nav a");
+
+  headerRoutes.forEach((route) => {
+    if (route.href === location.href) {
+      route.style.color = "#0046b7";
+    }
+  });
+
   if (hamburgerMenu && sideNav) {
     const openSideNav = () => {
       sideNav.style.width = "100%";
@@ -114,10 +92,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     hamburgerMenu.addEventListener("click", openSideNav);
   }
+
+  const contentHeader = document.getElementById("contentHeader");
+
+  if (contentHeader) {
+    contentHeader.addEventListener("click", dropdownClickHandler);
+  }
+
+  const aboutUsButton = document.querySelector(".aboutUsSection button");
+
+  if (aboutUsButton) {
+    aboutUsButton.addEventListener("click", () => {
+      document.location.href = "/about.html";
+    });
+  }
 });
-
-const contentHeader = document.getElementById("contentHeader");
-
-if (contentHeader) {
-  contentHeader.addEventListener("click", dropdownClickHandler);
-}
