@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const dropdownContent = document.getElementById("dropdownContent");
 
   const fetchCountries = async () => {
-    const fetchUrl = "https://api.first.org/data/v1/countries";
+    const fetchUrl = "https://api.first.org/data/v1/countries?limit=500";
 
     await axios
       .get(fetchUrl)
