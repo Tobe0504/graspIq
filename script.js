@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       question: "Who can benefit from GraspIQ?",
       answer:
-        "Teachers, parents, School, Edtech companies, and educational researchers can all benefit from our innovative tools",
+        "Teachers, parents, Schools, Edtech companies, and educational researchers can all benefit from our innovative tools",
     },
 
     {
