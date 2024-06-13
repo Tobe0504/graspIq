@@ -616,7 +616,7 @@ footer>.lowerSection {
       /* Reduce the size of the logo */
       .logo img {
         max-width: 295px; /* Adjust the width as needed */
-        height: 108px;
+        height: 104px;
     }
 
   p {
