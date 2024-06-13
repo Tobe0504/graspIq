@@ -4,6 +4,18 @@
   box-sizing: border-box;
 }
 
+/* Hide the logo by default */
+.logo {
+  display: none;
+}
+
+/* Show the logo on mobile devices (for example, max-width of 768px) */
+@media only screen and (max-width: 768px) {
+  .logo {
+      display: block;
+  }
+}
+
 body {
   padding: 0;
   margin: 0;
