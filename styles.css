@@ -4,18 +4,6 @@
   box-sizing: border-box;
 }
 
-/* Hide the logo by default */
-.logo {
-  display: none;
-}
-
-/* Show the logo on mobile devices (for example, max-width of 768px) */
-@media only screen and (max-width: 768px) {
-  .logo {
-      display: block;
-  }
-}
-
 body {
   padding: 0;
   margin: 0;
@@ -50,7 +38,7 @@ h4 {
   color: #1c1c1c;
 }
 
-h4 > span {
+h4>span {
   font-family: Manrope;
   font-size: 52px;
   font-weight: 700;
@@ -88,7 +76,7 @@ button:hover {
   transform: scale(1.05);
 }
 
-body > section,
+body>section,
 footer {
   padding: 40px 100px;
 }
@@ -105,8 +93,8 @@ nav {
   background: #f9fbfc;
 }
 
-nav > a,
-.sidenavInner > div > a {
+nav>a,
+.sidenavInner>div>a {
   font-family: Manrope;
   font-size: 20px;
   font-weight: 400;
@@ -118,23 +106,23 @@ nav > a,
   transition: all 0.3s ease-in-out;
 }
 
-nav > a:hover,
-.sidenavInner > div > a:hover {
+nav>a:hover,
+.sidenavInner>div>a:hover {
   color: #4d93df;
 }
 
-nav > a:nth-child(2) {
+nav>a:nth-child(2) {
   margin-left: auto;
 }
 
-nav > img,
-.sidenavInner > img,
-footer > .upperSection > div > img {
+nav>img,
+.sidenavInner>img,
+footer>.upperSection>div>img {
   width: 215px;
   cursor: pointer;
 }
 
-nav > svg {
+nav>svg {
   display: none;
 }
 
@@ -156,15 +144,15 @@ nav > svg {
   padding: 20px;
 }
 
-.sidenavInner > svg {
+.sidenavInner>svg {
   float: right;
 }
 
-.sidenavInner > div {
+.sidenavInner>div {
   margin-top: 2rem;
 }
 
-.sidenavInner > div > a {
+.sidenavInner>div>a {
   margin-bottom: 2rem;
 }
 
@@ -176,12 +164,12 @@ nav > svg {
   position: relative;
 }
 
-.heroSection > .textSection {
+.heroSection>.textSection {
   width: 50%;
   flex-basis: 50%;
 }
 
-.heroSection > .textSection > h1 {
+.heroSection>.textSection>h1 {
   font-family: Manrope;
   font-size: 52px;
   font-weight: 500;
@@ -190,7 +178,7 @@ nav > svg {
   color: #1c1c1c;
 }
 
-.heroSection > .textSection > h1 > span {
+.heroSection>.textSection>h1>span {
   font-family: Manrope;
   font-size: 52px;
   font-weight: 800;
@@ -199,7 +187,7 @@ nav > svg {
   color: #0046b7;
 }
 
-.heroSection > .textSection > p {
+.heroSection>.textSection>p {
   font-family: Manrope;
   font-size: 24px;
   font-weight: 400;
@@ -209,7 +197,7 @@ nav > svg {
   margin: 2rem 0;
 }
 
-.heroSection > .imageSection {
+.heroSection>.imageSection {
   width: 50%;
   flex-basis: 50%;
   position: relative;
@@ -217,11 +205,11 @@ nav > svg {
   border-radius: 20px;
 }
 
-.heroSection > .imageSection > img {
+.heroSection>.imageSection>img {
   border-radius: 20px;
 }
 
-.heroSection > img:last-child {
+.heroSection>img:last-child {
   position: absolute;
   top: 90px;
   left: 0;
@@ -229,7 +217,7 @@ nav > svg {
   z-index: -1;
 }
 
-.heroSection > .imageSection > img:nth-child(2) {
+.heroSection>.imageSection>img:nth-child(2) {
   position: absolute;
   top: 10px;
   bottom: 0;
@@ -239,7 +227,7 @@ nav > svg {
   z-index: -1;
 }
 
-.heroSection > .imageSection > img:nth-child(1) {
+.heroSection>.imageSection>img:nth-child(1) {
   top: 0;
   bottom: 0;
   margin: 0;
@@ -255,11 +243,11 @@ nav > svg {
   text-align: center;
 }
 
-.aboutUsSection > button:nth-child(3) {
+.aboutUsSection>button:nth-child(3) {
   margin: 1rem 0;
 }
 
-.aboutUsSection > img:nth-child(4),
+.aboutUsSection>img:nth-child(4),
 .student {
   width: 100%;
   height: 612px;
@@ -270,15 +258,15 @@ nav > svg {
   z-index: 2;
 }
 
-.aboutUsSection > img:nth-child(5),
-.coreValuesSection > img {
+.aboutUsSection>img:nth-child(5),
+.coreValuesSection>img {
   position: absolute;
   left: 0;
   z-index: 1;
   top: 50%;
 }
 
-.aboutUsSection > img:nth-child(6) {
+.aboutUsSection>img:nth-child(6) {
   position: absolute;
   right: 0;
   z-index: 1;
@@ -294,11 +282,11 @@ nav > svg {
   position: relative;
 }
 
-.coreValuesSection > div {
+.coreValuesSection>div {
   flex-basis: 50%;
 }
 
-.coreValuesSection .listSection > div {
+.coreValuesSection .listSection>div {
   background: #ffffff;
   padding: 2rem 1.5rem;
   border-radius: 13px;
@@ -308,7 +296,7 @@ nav > svg {
   color: #1c1c1c;
 }
 
-.coreValuesSection .listSection > div > span:nth-child(1) {
+.coreValuesSection .listSection>div>span:nth-child(1) {
   font-family: Manrope;
   font-size: 36px;
   font-weight: 700;
@@ -318,7 +306,7 @@ nav > svg {
   border-right: 1px solid #00000033;
 }
 
-.coreValuesSection .listSection > div > span:nth-child(2) {
+.coreValuesSection .listSection>div>span:nth-child(2) {
   font-family: Manrope;
   font-size: 22px;
   font-weight: 700;
@@ -332,8 +320,8 @@ nav > svg {
   position: relative;
 }
 
-.featureSection > .listSection,
-.waitListPreSection > .listSection {
+.featureSection>.listSection,
+.waitListPreSection>.listSection {
   display: flex;
   align-items: stretch;
   gap: 20px;
@@ -341,8 +329,8 @@ nav > svg {
   margin-top: 2rem;
 }
 
-.featureSection > .listSection > div,
-.waitListPreSection > .listSection > div {
+.featureSection>.listSection>div,
+.waitListPreSection>.listSection>div {
   flex-basis: 48%;
   border: 1px solid #525fe129;
   display: flex;
@@ -356,27 +344,27 @@ nav > svg {
   background-color: #fff;
 }
 
-.featureSection > .listSection > div:nth-child(1) > div:nth-child(1) {
+.featureSection>.listSection>div:nth-child(1)>div:nth-child(1) {
   background: #a7ce4a;
   box-shadow: 0px 8px 21px 0px #a7ce4a40;
 }
 
-.featureSection > .listSection > div:nth-child(2) > div:nth-child(1) {
+.featureSection>.listSection>div:nth-child(2)>div:nth-child(1) {
   background: #4d93df;
   box-shadow: 0px 8px 21px 0px #4d93df40;
 }
 
-.featureSection > .listSection > div:nth-child(3) > div:nth-child(1) {
+.featureSection>.listSection>div:nth-child(3)>div:nth-child(1) {
   background: #9848ff;
   box-shadow: 0px 8px 21px 0px #9848ff40;
 }
 
-.featureSection > .listSection > div:nth-child(4) > div:nth-child(1) {
+.featureSection>.listSection>div:nth-child(4)>div:nth-child(1) {
   background: #f66742;
   box-shadow: 0px 8px 21px 0px #f6674240;
 }
 
-.featureSection > .listSection > div > div:nth-child(1) {
+.featureSection>.listSection>div>div:nth-child(1) {
   width: 64px;
   height: 64px;
   border-radius: 13px;
@@ -386,8 +374,8 @@ nav > svg {
   justify-content: center;
 }
 
-.featureSection > .listSection > div > h6:nth-child(2),
-.waitListPreSection > .listSection > div > h6 {
+.featureSection>.listSection>div>h6:nth-child(2),
+.waitListPreSection>.listSection>div>h6 {
   font-family: Manrope;
   font-size: 22px;
   font-weight: 600;
@@ -396,13 +384,13 @@ nav > svg {
   color: #1c1c1c;
 }
 
-.featureSection > .listSection > div > p:nth-child(3),
-.waitListPreSection > .listSection > div > p {
+.featureSection>.listSection>div>p:nth-child(3),
+.waitListPreSection>.listSection>div>p {
   width: 60%;
 }
 
-.featureSection > .listSection > div:hover,
-.waitListPreSection > .listSection > div:hover {
+.featureSection>.listSection>div:hover,
+.waitListPreSection>.listSection>div:hover {
   box-shadow: 0px 13px 28px 0px #0000000f;
 }
 
@@ -411,7 +399,7 @@ nav > svg {
   position: relative;
 }
 
-.benefitSection > .listSection {
+.benefitSection>.listSection {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -420,7 +408,7 @@ nav > svg {
   margin-top: 4rem;
 }
 
-.benefitSection > .listSection > div {
+.benefitSection>.listSection>div {
   width: 360px;
   flex-basis: 30%;
   height: 436px;
@@ -430,32 +418,32 @@ nav > svg {
   background-color: #fff;
 }
 
-.benefitSection > .listSection > div > div:nth-child(1) {
+.benefitSection>.listSection>div>div:nth-child(1) {
   width: 100%;
   height: 224px;
   border-radius: 13px 13px 0px 0px;
 }
 
-.benefitSection > .listSection > div > div:nth-child(1) > img {
+.benefitSection>.listSection>div>div:nth-child(1)>img {
   width: 100%;
   height: 100%;
   border-radius: 13px 13px 0px 0px;
   object-fit: cover;
 }
 
-.benefitSection > .listSection > div > div:nth-child(2) {
+.benefitSection>.listSection>div>div:nth-child(2) {
   padding: 1.5rem;
   background-color: #fff;
 }
 
-.benefitSection > .listSection > div > div:nth-child(2) > h6 {
+.benefitSection>.listSection>div>div:nth-child(2)>h6 {
   font-family: Manrope;
   font-size: 22px;
   font-weight: 700;
   line-height: 33px;
 }
 
-.benefitSection > img:nth-child(4) {
+.benefitSection>img:nth-child(4) {
   position: absolute;
   top: 70px;
   right: 120px;
@@ -464,7 +452,7 @@ nav > svg {
   height: 162px;
 }
 
-.benefitSection > img:nth-child(5) {
+.benefitSection>img:nth-child(5) {
   position: absolute;
   bottom: 70px;
   right: 0px;
@@ -477,7 +465,7 @@ nav > svg {
   background: #fff4ca;
 }
 
-.waitListPreSection > .listSection {
+.waitListPreSection>.listSection {
   margin-top: 4rem;
 }
 
@@ -488,23 +476,23 @@ nav > svg {
   gap: 2rem;
 }
 
-.waitinglisrForm > form > div {
+.waitinglisrForm>form>div {
   margin-bottom: 1rem;
 }
 
-.waitinglisrForm > form {
+.waitinglisrForm>form {
   width: 50%;
   flex-basis: 50%;
 }
 
-.waitinglisrForm > img {
+.waitinglisrForm>img {
   width: 50%;
   flex-basis: 50%;
   object-fit: cover;
   border-radius: 20px;
 }
 
-.waitinglisrForm > form > div > label {
+.waitinglisrForm>form>div>label {
   font-family: Manrope;
   font-size: 18px;
   font-weight: 400;
@@ -513,8 +501,8 @@ nav > svg {
   margin-bottom: 0.75rem;
 }
 
-.waitinglisrForm > form > div > input,
-.waitinglisrForm > form > div > select {
+.waitinglisrForm>form>div>input,
+.waitinglisrForm>form>div>select {
   width: 100%;
   padding: 18px 32px;
   border: 1px solid #000;
@@ -524,11 +512,11 @@ nav > svg {
   line-height: 26px;
 }
 
-.waitinglisrForm > form > button {
+.waitinglisrForm>form>button {
   margin: 2rem auto;
 }
 
-.faqSection > h4 {
+.faqSection>h4 {
   text-align: center;
 }
 
@@ -536,14 +524,14 @@ nav > svg {
   margin-top: 4rem;
 }
 
-.questionSection > div {
+.questionSection>div {
   padding: 1rem 1rem;
   border-radius: 10px;
   border: 1px solid #000;
   margin-bottom: 1rem;
 }
 
-.questionSection > div > div:nth-child(1) {
+.questionSection>div>div:nth-child(1) {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -553,7 +541,7 @@ nav > svg {
   line-height: 26px;
 }
 
-.questionSection > div > div:nth-child(2) {
+.questionSection>div>div:nth-child(2) {
   font-family: Manrope;
   font-size: 16px;
   font-weight: 400;
@@ -569,21 +557,21 @@ footer {
   color: #fff;
 }
 
-footer > .upperSection {
+footer>.upperSection {
   display: flex;
   align-items: flex-start;
   gap: 5rem;
   padding: 2rem 0;
 }
 
-footer > .upperSection > div:nth-child(1) > h4,
-footer > .upperSection > div:nth-child(1) > p {
+footer>.upperSection>div:nth-child(1)>h4,
+footer>.upperSection>div:nth-child(1)>p {
   color: #fff;
   margin-bottom: 1rem;
 }
 
-footer > .upperSection > div:nth-child(1) > p,
-footer > .upperSection > div > a {
+footer>.upperSection>div:nth-child(1)>p,
+footer>.upperSection>div>a {
   font-family: Manrope;
   font-size: 14px;
   font-weight: 300;
@@ -592,10 +580,7 @@ footer > .upperSection > div > a {
   color: #fff;
 }
 
-footer
-  > .upperSection
-  > div:not(footer > .upperSection > div:nth-child(1))
-  > h4 {
+footer>.upperSection>div:not(footer > .upperSection > div:nth-child(1))>h4 {
   font-family: Manrope;
   font-size: 24px;
   font-weight: 700;
@@ -604,7 +589,7 @@ footer
   color: #f5fcfc;
 }
 
-footer > .lowerSection {
+footer>.lowerSection {
   border-top: 2px solid #fff;
   font-family: Manrope;
   font-size: 14px;
@@ -622,6 +607,12 @@ footer > .lowerSection {
 }
 
 @media screen and (max-width: 767px) {
+  .logo {
+    display: block;
+    margin-left: auto;
+    /* Push other items to the right */
+  }
+
   p {
     font-size: 18px;
     line-height: 150%;
@@ -632,7 +623,7 @@ footer > .lowerSection {
     line-height: 150%;
   }
 
-  h4 > span {
+  h4>span {
     font-size: 30px;
     line-height: 150%;
   }
@@ -645,7 +636,7 @@ footer > .lowerSection {
     padding: 0.5rem 1rem;
   }
 
-  body > section,
+  body>section,
   footer,
   nav {
     padding: 20px;
@@ -657,17 +648,23 @@ footer > .lowerSection {
     z-index: 20;
   }
 
-  nav > img,
-  footer > .upperSection > div > img {
+  nav a,
+  nav svg {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+
+  nav>img,
+  footer>.upperSection>div>img {
     width: 185px;
   }
 
-  nav > button,
-  nav > a {
+  nav>button,
+  nav>a {
     display: none;
   }
 
-  nav > svg {
+  nav>svg {
     display: block;
     margin-left: auto;
   }
@@ -678,40 +675,40 @@ footer > .lowerSection {
     min-height: auto;
   }
 
-  .heroSection > .textSection {
+  .heroSection>.textSection {
     width: 100%;
     flex-basis: 100%;
   }
 
-  .heroSection > .textSection > h1 {
+  .heroSection>.textSection>h1 {
     font-size: 30px;
     line-height: 150%;
   }
 
-  .heroSection > .textSection > h1 > span {
+  .heroSection>.textSection>h1>span {
     font-family: Manrope;
     font-size: 30px;
     line-height: 150%;
   }
 
-  .heroSection > .textSection > p {
+  .heroSection>.textSection>p {
     font-family: Manrope;
     font-size: 18px;
     line-height: 150%;
     margin: 2rem 0;
   }
 
-  .heroSection > .imageSection {
+  .heroSection>.imageSection {
     width: 100%;
     flex-basis: 100%;
     height: 100%;
   }
 
-  .heroSection > img:last-child {
+  .heroSection>img:last-child {
     display: none;
   }
 
-  .heroSection > .imageSection > img:nth-child(2) {
+  .heroSection>.imageSection>img:nth-child(2) {
     top: 70px;
     bottom: 0;
     right: 0;
@@ -723,7 +720,7 @@ footer > .lowerSection {
     text-align: center;
   }
 
-  .aboutUsSection > img:nth-child(5) {
+  .aboutUsSection>img:nth-child(5) {
     display: none;
   }
 
@@ -732,70 +729,70 @@ footer > .lowerSection {
     align-items: center;
   }
 
-  .coreValuesSection > div:nth-child(1) {
+  .coreValuesSection>div:nth-child(1) {
     display: none;
   }
 
-  .coreValuesSection > div {
+  .coreValuesSection>div {
     flex-basis: 100%;
     width: 100%;
   }
 
-  .coreValuesSection .listSection > div {
+  .coreValuesSection .listSection>div {
     padding: 1rem 1.25rem;
     margin-top: 1rem;
     width: 100%;
   }
 
-  .coreValuesSection .listSection > div > span:nth-child(1) {
+  .coreValuesSection .listSection>div>span:nth-child(1) {
     font-size: 24px;
     line-height: 150%;
     padding: 0 0.5rem;
   }
 
-  .coreValuesSection .listSection > div > span:nth-child(2) {
+  .coreValuesSection .listSection>div>span:nth-child(2) {
     font-size: 22px;
     padding: 0 0.5rem;
   }
 
-  .featureSection > .listSection,
-  .waitListPreSection > .listSection {
+  .featureSection>.listSection,
+  .waitListPreSection>.listSection {
     margin-top: 1rem;
   }
 
-  .featureSection > .listSection > div,
-  .waitListPreSection > .listSection > div {
+  .featureSection>.listSection>div,
+  .waitListPreSection>.listSection>div {
     flex-basis: 100%;
     gap: 24px;
     padding: 1.5rem 1rem;
   }
 
-  .featureSection > .listSection > div > p:nth-child(3),
-  .waitListPreSection > .listSection > div > p {
+  .featureSection>.listSection>div>p:nth-child(3),
+  .waitListPreSection>.listSection>div>p {
     width: 90%;
   }
 
-  .benefitSection > .listSection {
+  .benefitSection>.listSection {
     gap: 20px;
     margin-top: 2rem;
   }
 
-  .benefitSection > .listSection > div {
+  .benefitSection>.listSection>div {
     width: 100%;
     flex-basis: 100%;
     height: 436px;
   }
 
-  .benefitSection > .listSection > div > div:nth-child(1) {
+  .benefitSection>.listSection>div>div:nth-child(1) {
     width: 100%;
     height: 224px;
   }
 
-  .benefitSection > .listSection > div > div:nth-child(2) {
+  .benefitSection>.listSection>div>div:nth-child(2) {
     padding: 1rem;
   }
 
-  .benefitSection > img:nth-child(4) {
+  .benefitSection>img:nth-child(4) {
     position: absolute;
     top: 70px;
     right: 120px;
@@ -804,7 +801,7 @@ footer > .lowerSection {
     height: 162px;
   }
 
-  .benefitSection > img:nth-child(5) {
+  .benefitSection>img:nth-child(5) {
     display: none;
   }
 
@@ -813,7 +810,7 @@ footer > .lowerSection {
     background: #fff4ca;
   }
 
-  .waitListPreSection > .listSection {
+  .waitListPreSection>.listSection {
     margin-top: 3rem;
   }
 
@@ -822,12 +819,12 @@ footer > .lowerSection {
     gap: 2rem;
   }
 
-  .waitinglisrForm > form {
+  .waitinglisrForm>form {
     width: 100%;
     flex-basis: 100%;
   }
 
-  .waitinglisrForm > img {
+  .waitinglisrForm>img {
     width: 100%;
     flex-basis: 100%;
   }
@@ -836,17 +833,17 @@ footer > .lowerSection {
     margin-top: 2rem;
   }
 
-  .questionSection > div {
+  .questionSection>div {
     padding: 1rem;
   }
 
-  footer > .upperSection {
+  footer>.upperSection {
     flex-direction: column;
     gap: 1rem;
   }
 
-  .waitinglisrForm > form > div > input,
-  .waitinglisrForm > form > div > select {
+  .waitinglisrForm>form>div>input,
+  .waitinglisrForm>form>div>select {
     padding: 12px 16px;
     font-size: 14px;
     line-height: 150%;
@@ -864,7 +861,7 @@ footer > .lowerSection {
     line-height: 150%;
   }
 
-  h4 > span {
+  h4>span {
     font-size: 30px;
     line-height: 150%;
   }
@@ -877,7 +874,7 @@ footer > .lowerSection {
     padding: 0.5rem 1rem;
   }
 
-  body > section,
+  body>section,
   footer,
   nav {
     padding: 20px;
@@ -889,18 +886,18 @@ footer > .lowerSection {
     z-index: 20;
   }
 
-  nav > p {
+  nav>p {
     font-size: 30px;
     font-weight: 700;
     line-height: 150%;
   }
 
-  nav > svg {
+  nav>svg {
     display: block;
   }
 
-  nav > button,
-  nav > a {
+  nav>button,
+  nav>a {
     display: none;
   }
 
@@ -910,40 +907,40 @@ footer > .lowerSection {
     min-height: auto;
   }
 
-  .heroSection > .textSection {
+  .heroSection>.textSection {
     width: 100%;
     flex-basis: 100%;
   }
 
-  .heroSection > .textSection > h1 {
+  .heroSection>.textSection>h1 {
     font-size: 30px;
     line-height: 150%;
   }
 
-  .heroSection > .textSection > h1 > span {
+  .heroSection>.textSection>h1>span {
     font-family: Manrope;
     font-size: 30px;
     line-height: 150%;
   }
 
-  .heroSection > .textSection > p {
+  .heroSection>.textSection>p {
     font-family: Manrope;
     font-size: 18px;
     line-height: 150%;
     margin: 2rem 0;
   }
 
-  .heroSection > .imageSection {
+  .heroSection>.imageSection {
     width: 100%;
     flex-basis: 100%;
     height: 100%;
   }
 
-  .heroSection > img:last-child {
+  .heroSection>img:last-child {
     display: none;
   }
 
-  .heroSection > .imageSection > img:nth-child(2) {
+  .heroSection>.imageSection>img:nth-child(2) {
     top: 70px;
     bottom: 0;
     right: 0;
@@ -955,7 +952,7 @@ footer > .lowerSection {
     text-align: center;
   }
 
-  .aboutUsSection > img:nth-child(5) {
+  .aboutUsSection>img:nth-child(5) {
     display: none;
   }
 
@@ -964,70 +961,70 @@ footer > .lowerSection {
     align-items: center;
   }
 
-  .coreValuesSection > div:nth-child(1) {
+  .coreValuesSection>div:nth-child(1) {
     display: none;
   }
 
-  .coreValuesSection > div {
+  .coreValuesSection>div {
     flex-basis: 100%;
     width: 100%;
   }
 
-  .coreValuesSection .listSection > div {
+  .coreValuesSection .listSection>div {
     padding: 1rem 1.25rem;
     margin-top: 1rem;
     width: 100%;
   }
 
-  .coreValuesSection .listSection > div > span:nth-child(1) {
+  .coreValuesSection .listSection>div>span:nth-child(1) {
     font-size: 24px;
     line-height: 150%;
     padding: 0 0.5rem;
   }
 
-  .coreValuesSection .listSection > div > span:nth-child(2) {
+  .coreValuesSection .listSection>div>span:nth-child(2) {
     font-size: 22px;
     padding: 0 0.5rem;
   }
 
-  .featureSection > .listSection,
-  .waitListPreSection > .listSection {
+  .featureSection>.listSection,
+  .waitListPreSection>.listSection {
     margin-top: 1rem;
   }
 
-  .featureSection > .listSection > div,
-  .waitListPreSection > .listSection > div {
+  .featureSection>.listSection>div,
+  .waitListPreSection>.listSection>div {
     flex-basis: 100%;
     gap: 24px;
     padding: 1.5rem 1rem;
   }
 
-  .featureSection > .listSection > div > p:nth-child(3),
-  .waitListPreSection > .listSection > div > p {
+  .featureSection>.listSection>div>p:nth-child(3),
+  .waitListPreSection>.listSection>div>p {
     width: 90%;
   }
 
-  .benefitSection > .listSection {
+  .benefitSection>.listSection {
     gap: 20px;
     margin-top: 2rem;
   }
 
-  .benefitSection > .listSection > div {
+  .benefitSection>.listSection>div {
     width: 100%;
     flex-basis: 100%;
     height: 436px;
   }
 
-  .benefitSection > .listSection > div > div:nth-child(1) {
+  .benefitSection>.listSection>div>div:nth-child(1) {
     width: 100%;
     height: 224px;
   }
 
-  .benefitSection > .listSection > div > div:nth-child(2) {
+  .benefitSection>.listSection>div>div:nth-child(2) {
     padding: 1rem;
   }
 
-  .benefitSection > img:nth-child(4) {
+  .benefitSection>img:nth-child(4) {
     position: absolute;
     top: 70px;
     right: 120px;
@@ -1036,7 +1033,7 @@ footer > .lowerSection {
     height: 162px;
   }
 
-  .benefitSection > img:nth-child(5) {
+  .benefitSection>img:nth-child(5) {
     display: none;
   }
 
@@ -1045,7 +1042,7 @@ footer > .lowerSection {
     background: #fff4ca;
   }
 
-  .waitListPreSection > .listSection {
+  .waitListPreSection>.listSection {
     margin-top: 3rem;
   }
 
@@ -1054,12 +1051,12 @@ footer > .lowerSection {
     gap: 2rem;
   }
 
-  .waitinglisrForm > form {
+  .waitinglisrForm>form {
     width: 100%;
     flex-basis: 100%;
   }
 
-  .waitinglisrForm > img {
+  .waitinglisrForm>img {
     width: 100%;
     flex-basis: 100%;
   }
@@ -1068,11 +1065,11 @@ footer > .lowerSection {
     margin-top: 2rem;
   }
 
-  .questionSection > div {
+  .questionSection>div {
     padding: 1rem;
   }
 
-  footer > .upperSection {
+  footer>.upperSection {
     flex-direction: column;
     gap: 1rem;
   }
