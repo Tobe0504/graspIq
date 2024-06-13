@@ -613,6 +613,12 @@ footer>.lowerSection {
     /* Push other items to the right */
   }
 
+      /* Reduce the size of the logo */
+      .logo img {
+        max-width: 295px; /* Adjust the width as needed */
+        height: 115px;
+    }
+
   p {
     font-size: 18px;
     line-height: 150%;
