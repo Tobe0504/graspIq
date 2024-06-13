@@ -58,10 +58,10 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 
   const scrollToForm = () => {
-    window.location.href = "/waiting-list.html";
+    window.location.href = "./waiting-list.html";
   };
 
-  navButton.addEventListener("click", scrollToForm);
+  // navButton.addEventListener("click", scrollToForm);
   waitListPreSectionButton.addEventListener("click", scrollToForm);
   heroSectionButton.addEventListener("click", scrollToForm);
 
