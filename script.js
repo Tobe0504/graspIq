@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       question: "What is GraspIQ?",
       answer:
-        "GraapIQ is an Integrated Adaptibe Learning and Emotional Intelligence Platform designed to personalize early education using adaptive learning and biometric feedback.",
+        "GraspIQ is an Integrated Adaptibe Learning and Emotional Intelligence Platform designed to personalize early education using adaptive learning and biometric feedback.",
     },
 
     {
