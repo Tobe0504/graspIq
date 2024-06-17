@@ -606,6 +606,12 @@ footer>.lowerSection {
   margin-top: 1rem;
 }
 
+.logo img {
+  max-width: 365px;
+  /* Adjust the width as needed */
+  height: 130px;
+}
+
 @media screen and (max-width: 767px) {
   .logo {
     display: block;
@@ -613,11 +619,12 @@ footer>.lowerSection {
     /* Push other items to the right */
   }
 
-      /* Reduce the size of the logo */
-      .logo img {
-        max-width: 295px; /* Adjust the width as needed */
-        height: 100px;
-    }
+  /* Reduce the size of the logo */
+  .logo img {
+    max-width: 295px;
+    /* Adjust the width as needed */
+    height: 100px;
+  }
 
   p {
     font-size: 18px;
