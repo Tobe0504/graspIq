@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const formRequestBody = inputObjects;
 
-        const fetchUrl = "https://graspiqapi.onrender.com/submit-form";
+        const fetchUrl = "https://graspiqbackend.onrender.com/submit-form";
 
         await axios
             .post(fetchUrl, formRequestBody)
