@@ -19,13 +19,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 dropdownContent.innerHTML = [
                     "<option selected disabled>Select country</option>",
                     ...countries,
-                ].join(''); // Ensure it's a string
+                ].join(""); // Ensure it's a string
             })
             .catch((err) => {
                 console.log(err);
             });
     };
-
 
     fetchCountries();
 
@@ -76,6 +75,18 @@ document.addEventListener("DOMContentLoaded", () => {
                 console.log(res);
                 document.getElementById("errortext").innerHTML = res?.data?.message;
                 document.getElementById("errortext").style.color = "green";
+
+                // Clear form inputs and reset inputObjects
+                formInputs.forEach((input) => {
+                    input.value = "";
+                });
+                formSelect.value = ""; // Assuming the default value is an empty string
+                inputObjects = {
+                    firstname: "",
+                    lastname: "",
+                    email: "",
+                    country: "",
+                };
             })
             .catch((err) => {
                 document.getElementById("errortext").style.display = "block";
